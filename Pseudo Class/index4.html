@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Pseudo Classes 4</title>
+        <link rel="stylesheet" href=""/>
+        <style>
+            input:disabled{
+                background: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset id="present">
+                <legend>Present Address</legend>
+                <input type="text" placeholder="Village"/>
+                <input type="text" placeholder="Post Office"/>
+                <input type="text" placeholder="District"/>
+            </fieldset>
+            <fieldset id="parmanent">
+                <legend>Parmanent Address</legend>
+                <input type="checkbox" name="same-as-cb" id="same-as-cb" checked/>
+                <label for="same-as-cb">Same as Present Address</label><br/>
+                <input type="text" placeholder="Village" disabled/>
+                <input type="text" placeholder="Post Office" disabled/>
+                <input type="text" placeholder="District" disabled/>
+            </fieldset>
+        </form>
+        <script>
+            function toggleDisable(){
+                var items = document.querySelectorAll('#parmanent input[type="text"]');
+                for(var i = 0; i < items.length; ++i){
+                    items[i].disabled = !items[i].disabled;
+                }
+            }
+
+            document.addEventListener("DOMContentLoaded", function(){
+                document.getElementById('same-as-cb').onchange = toggleDisable;
+            }, false);
+        </script>
+    </body>
+</html>

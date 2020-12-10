@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Pseudo Classes 6</title>
+        <link rel="stylesheet" href=""/>
+        <style>
+            p:first-child{
+                background: black;
+                color: green;
+            }
+
+            p:first-of-type{
+                color: red;
+            }
+            /* :first-child is assigned to the first element of any type of elements in a certain level */
+            /* :first-of-type is assigned to the first of the defined type found in a certain level, not necessarily */
+            /* to be the first of all elements in the level */
+        </style>
+    </head>
+    <body>
+        <p>this is a paragraph.</p>
+        <div>
+            <p>lorem ipsum is a placeholder text.</p>
+            <p>lorem ipsum is a placeholder text.</p>
+        </div>
+        <div>
+            <h2>this is a heading 2</h2>
+            <p>lorem ipsum is a placeholder text.</p>
+        </div>
+    </body>
+</html>

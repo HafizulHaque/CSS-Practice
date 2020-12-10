@@ -1,0 +1,33 @@
+/* Universal Selector */
+*{
+    box-sizing: border-box;
+}
+
+/* Element Selector */
+html, body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    font-size: 2em;
+    text-align: justify;
+}
+
+/* Class Selector */
+.myClass{
+    color: red;
+}
+
+/* Id Selector */
+#myId{
+    color: blue;
+}
+
+/* Attribute Selector */
+[modified]{
+    background: green;
+    color: red;
+    font-weight: bold;
+}

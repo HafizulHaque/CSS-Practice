@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Basic Selector</title>
+        <link rel="shortcut icon" href="icon.png"/>
+        <style>
+            h2{
+                color: green;
+            }
+
+            h3{
+                color: inherit;
+            }
+
+            *{
+                color: blue;
+            } 
+
+            body{
+                color: red;
+            }
+
+            /* Specificity Order: high to low
+                Inline > ID > Class, :Pseudo-Class, Attribute Selector > Element, ::Pseudo-Element selector
+                > *Universal Selector > Inheritence 
+            */
+        </style>
+    </head>
+    <body>
+        <p>This is some paragraph</p>
+        <h2>This is some heading 2</h2>
+        <h3>This is some heading 3</h3>
+    </body>
+</html>

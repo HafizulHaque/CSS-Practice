@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Basic Selector</title>
+        <link rel="shortcut icon" href="icon.png"/>
+        <style>
+            div > p{
+                color: red;
+            }
+            div p{
+                color: green;
+            }
+            p{
+                color:blue;
+            }
+            /* NOTE: 
+            Specificity is only determined by selectors (class, pseudo class, ID,
+            element/pseudoelement/ * /inheritence)
+            Combinators don't increase or decrease specificity, it just hold cherished items  */
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>This is a pragraph inside div</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Pseudo Classes 3</title>
+        <link rel="stylesheet" href=""/>
+        <style>
+            input[type="radio"]:checked + label{
+                color: red;
+            }
+            input[type="checkbox"]:checked + label{
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <input  type="radio" name="gender" id="male"/> &nbsp;
+            <label for="male">Male: </label>
+            <input type="radio" name="gender" id="female"/>
+            <label for="female">Female: </label>
+            <br/>
+            <input  type="checkbox" name="edu" id="hons"/> &nbsp;
+            <label for="hons">Honours </label>
+            <input type="checkbox" name="edu" id="masts"/>
+            <label for="masts">Masters: </label>
+            <br/>
+            <button>Submit</button>
+        </form>
+    </body>
+</html>

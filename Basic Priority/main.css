@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+
+html, head{
+    width: 100%;
+}
+
+#imp{
+    font-family: 'Montserrat', sans-serif;
+}

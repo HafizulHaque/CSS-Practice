@@ -1,0 +1,5 @@
+/* Selects the next adjacent any sibling after .myClass element  */
+
+.myClass + *{
+    background: greenyellow;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Pseudo Classes 8</title>
+        <link rel="stylesheet" href=""/>
+        <style>
+            form:focus-within{
+                background: rgba(255, 0, 0, 0.1);
+            }
+           input:focus{
+               border: 2px solid green;
+               background: rgba(0, 255, 0, 0.1);
+               font-weight: bold;
+           }
+
+           input:indeterminate + label{
+               background: lime;
+               color: red;
+           }
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Basic Info</legend>
+                <label for="user">User Name :</label>
+                <input type="text" placeholder="User name" id="user"/><br/><br/>
+                <label for="email">User E-mail :</label>
+                <input type="email" placeholder="E-Mail address" id="email"/><br/><br/>
+                <label for="passwird">Password :</label>
+                <input type="password" placeholder="Password" id="password"/><br/><br/>
+                <input type="checkbox" id="agree"/>
+                <label for="agree">Agree T&C</label><br/><br/>
+                <button>Submit</button>
+            </fieldset>
+        </form>
+        <script>
+            document.getElementById('agree').indeterminate = true;
+        </script>
+    </body>
+</html>

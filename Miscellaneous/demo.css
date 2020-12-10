@@ -1,0 +1,8 @@
+div#myDiv{
+	height: 200px;
+	background: orange;
+}
+
+div{
+	background: red !important; /* 'important' anotation clears specificity*/
+}

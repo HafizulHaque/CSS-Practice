@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* General sibling */
+/* Holds any p that appears after any h2 and both share the same parent */
+h2 ~ p {
+    color: green;
+}
+
+/* adjacent sibling */
+/* Holds any p that appear immediately after h2 and both share same parent */
+h2 + p{
+    color: red;
+}
+
+/* Child Combinator */
+/* Holds any p that is direct child of div */
+div > p {
+    color: greenyellow;
+}
+
+/* Decendent Combinator */
+/* Holds any p that is decendet (direct or nested child) of div */
+div p{
+    color: chocolate;
+}

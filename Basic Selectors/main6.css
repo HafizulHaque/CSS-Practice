@@ -1,0 +1,34 @@
+/* Select any element that has attribute customAttr */
+[customAttr]{
+    background: yellowgreen;
+}
+
+/* Selects any element that has customAttr attribute with value "custom1" */
+[customAttr="custom1"]{
+    background: red;
+}
+
+/* Selects only anchor elements with attribute href */
+a[href]{
+    text-decoration: none;
+}
+
+/* Selects anchor elements that's href attribute value start with 'https' */
+a[href^="https"]{
+    background: orangered;
+}
+
+/* Selects anchor elements that's href attribute value contains 'example' regardless of capitalization */
+a[href*="example" i]{
+    background: chocolate;
+}
+
+/* Selects anchor elements that's href attribute value contains 'example' exactly*/
+a[href*="example"]{
+    background: yellowgreen;
+}
+
+/* Selects anchor elements that's href attribute value ends with 'org' */
+a[href$="org"]{
+    background: red;
+}

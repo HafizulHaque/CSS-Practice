@@ -1,0 +1,14 @@
+/* Selects any paragraph with myClass class */
+p.myClass{
+    background: yellowgreen;
+}
+
+/* Selects any element with myClass class */
+.myClass{
+    background: red;
+}
+
+/* Selects paragraph having both classes myClass & anotherClass */
+p.myClass.anotherClass{
+    background: orange;
+}
